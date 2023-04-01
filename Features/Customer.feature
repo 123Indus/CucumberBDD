@@ -21,7 +21,7 @@ Feature: Customer
     Then User can view confirmation message "The new customer has been added successfully."
     And close browser
 
-  @searchEmail @sanity
+  @searchEmail
   Scenario: Search Customer by Email
     Then User can view Dashboard
     When User click on customers Menu
