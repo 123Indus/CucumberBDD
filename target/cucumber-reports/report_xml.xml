@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="15.228" tests="2" skipped="0" failures="1" errors="0">
+<testcase classname="Login" name="Successful login with valid credentials DDT - Example #1.1" time="10.682">
+<system-out><![CDATA[
+Given User launch chrome browser............................................passed
+When user opens URL "https://admin-demo.nopcommerce.com/login"..............passed
+And User enters email as "admin@yourstore.com" and Password as "admin"......passed
+And click on login..........................................................passed
+Then page title should be "Dashboard / nopCommerce administration"..........passed
+When user click on logout link..............................................passed
+Then page title should be "Your store. Login"...............................passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Successful login with valid credentials DDT - Example #1.2" time="4.239">
+<failure type="java.lang.AssertionError">
+<![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepDefinition.StepDef.page_title_should_be(StepDef.java:220)
+	at ✽.page title should be "Dashboard / nopCommerce administration"(file:///G:/My%20Drive/EclpsePrjct1/CucumberWithCodeStudio/./Features/LoginFeature.feature:19)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User launch chrome browser............................................passed
+When user opens URL "https://admin-demo.nopcommerce.com/login"..............passed
+And User enters email as "test@yourstore.com" and Password as "admin".......passed
+And click on login..........................................................passed
+Then page title should be "Dashboard / nopCommerce administration"..........failed
+When user click on logout link..............................................skipped
+Then page title should be "Your store. Login"...............................skipped
+And close browser...........................................................skipped
+]]></system-out>
+</testcase>
+</testsuite>
