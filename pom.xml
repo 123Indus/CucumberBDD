@@ -167,6 +167,7 @@
     <version>1.5.0</version>
     <scope>system</scope>
     <systemPath>C:\Program Files\Java\jdk-17.0.5\lib\tools-1.5.0.jar</systemPath>
+    <optional>true</optional>
 </dependency>
 
 
